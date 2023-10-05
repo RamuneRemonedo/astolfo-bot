@@ -1,11 +1,10 @@
 package net.ramuremo.internal;
 
+import net.dv8tion.jda.api.events.interaction.command.MessageContextInteractionEvent;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.interactions.commands.build.CommandData;
 
-import java.util.function.Consumer;
-
-public class CommandConsumer implements Consumer<SlashCommandInteractionEvent> {
+public class CommandConsumer {
 
     private final CommandData data;
 
@@ -17,7 +16,9 @@ public class CommandConsumer implements Consumer<SlashCommandInteractionEvent> {
         return data;
     }
 
-    @Override
-    public void accept(SlashCommandInteractionEvent event) {
+    public void onSlashCommandInteraction(SlashCommandInteractionEvent event) throws Exception {
+    }
+
+    public void onMessageContextInteraction(MessageContextInteractionEvent event) throws Exception {
     }
 }

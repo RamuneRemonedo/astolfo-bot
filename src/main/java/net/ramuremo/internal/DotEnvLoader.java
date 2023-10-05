@@ -13,4 +13,9 @@ public class DotEnvLoader {
         if (dotenv == null) load();
         return dotenv.get("DISCORD_TOKEN");
     }
+
+    public static String getDBConnectionString() {
+        if (dotenv == null) load();
+        return dotenv.get("DB_CONNECTION_STRING");
+    }
 }
