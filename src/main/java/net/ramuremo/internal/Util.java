@@ -27,7 +27,7 @@ public class Util {
     public static EmbedBuilder decorateEmbedBuilder() {
         return new EmbedBuilder()
                 .setColor(new Color(0xFCAAD9))
-                .setAuthor("Created by @riy4y", "https://twitter.com/riy4y", Client.getClient().getSelfUser().getAvatarUrl());
+                .setAuthor("Created by riya", "https://twitter.com/im_lottie_noble", Client.getClient().getSelfUser().getAvatarUrl());
 
     }
 
